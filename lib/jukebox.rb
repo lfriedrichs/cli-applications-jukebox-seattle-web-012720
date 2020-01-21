@@ -14,8 +14,8 @@ def play(songs)
   if songs.include?(answer)
     puts "Playing #{answer}"
   else 
-    answer = answer.to_i
-    if (answer > 0) && (answer <= songs.length)
+    answer = answer.to_i - 1
+    if (answer >= 0) && (answer <= songs.length)
       puts "Playing #{songs[answer]}"
     else 
       puts "Invalid input, please try again"
