@@ -41,10 +41,13 @@ def run(songs)
       play(songs)
     elsif answer == "help"
       help 
-    elsif answer == 'list'
-      list(songs)
-    else 
-      answer = exit
+      elsif answer == 'list'
+        list(songs)
+        else 
+          answer = exit
+        end
+      end
+    end
   end
   exit_jukebox
 end
