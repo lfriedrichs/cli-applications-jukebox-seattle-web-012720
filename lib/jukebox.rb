@@ -47,6 +47,5 @@ def run(songs)
           answer = exit
         end
       end
-    end
   exit_jukebox
 end
