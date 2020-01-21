@@ -15,10 +15,11 @@ def play(songs)
     puts "Playing #{answer}"
   else 
     answer = answer_to.i
-    if answer > 0 && answer <= songs.length
-    puts "Playing #{songs[answer}"
-  else 
-    puts "Invalid input, please try again"
+    if (answer > 0) && (answer <= songs.length)
+      puts "Playing #{songs[answer}"
+    else 
+      puts "Invalid input, please try again"
+    end
   end
 end
 
