@@ -14,8 +14,8 @@ def play(songs)
   binding.pry
   if songs.include?(answer)
     puts "Playing #{answer}"
-  elsif answer.to_f <= songs.length && answer != nil
-    puts "Playing #{songs[answer.to_f-1]}"
+  elsif answer.to_i <= songs.length
+    puts "Playing #{songs[answer.to_i-1]}"
   else 
     puts "Invalid input, please try again"
   end
